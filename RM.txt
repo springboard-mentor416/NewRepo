@@ -1,7 +1,9 @@
-
+Aravind
 Changes Memeber 1
 dbName=$USER"DB"
+
 From Anand
+
 sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (1, 'Tablet', 600.00);" >> db_insert.log
 sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (2, 'Smartwatch', 250.00);" >> db_insert.log
 sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (3, 'Bluetooth Speaker', 75.00);" >> db_insert.log
