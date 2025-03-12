@@ -1,0 +1,56 @@
+dbName=$USER"DB"
+
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (1, 'Tablet', 600.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (2, 'Smartwatch', 250.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (3, 'Bluetooth Speaker', 75.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (4, 'Keyboard', 50.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (5, 'Mouse', 30.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (6, 'Printer', 2000.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (7, 'Camera', 450.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (8, 'Router', 120.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (9, 'Charger', 25.00);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (10, 'Flash Drive', 20.00);" >> db_insert.log
+
+
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (1, 'Eve Thompson');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (2, 'Frank Green');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (3, 'Grace Lee');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (4, 'Henry Martin');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (5, 'Ivy Scott');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (6, 'Jack Turner');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (7, 'Karen White');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (8, 'Leo Black');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (9, 'Mia Brown');" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Customers] (Id, Name) VALUES (10, 'Nick Davis');" >> db_insert.log
+
+
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (1, '2023-07-05', 7);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (2, '2023-07-06', 2);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (3, '2023-07-07', 3);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (4, '2023-07-08', 4);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (5, '2023-07-09', 5);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (6, '2023-07-10', 6);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (7, '2023-07-11', 7);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (8, '2023-07-12', 8);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (9, '2023-07-13', 9);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Orders] (Id, OrderDate, CustomerId) VALUES (10, '2023-07-14', 10);" >> db_insert.log
+
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (1, 1, 1);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (1, 3, 1);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (2, 2, 2);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (3, 4, 3);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (4, 1, 1);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (5, 5, 2);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (6, 6, 1);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (7, 7, 1);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (8, 8, 2);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (9, 9, 3);" >> db_insert.log
+sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[OrderItems] (OrderId, ProductId, Quantity) VALUES (10, 10, 4);" >> db_insert.log
+
+
+cat db_drop.log 
+sqlcmd -S localhost -U SA -P winsql@17 -Q "USE [$dbName]; Select * from [$dbName].[dbo].[Products]" >> db.log
+sqlcmd -S localhost -U SA -P winsql@17 -Q "USE [$dbName]; Select * from [$dbName].[dbo].[Customers]" >> db.log
+sqlcmd -S localhost -U SA -P winsql@17 -Q "USE [$dbName]; Select * from [$dbName].[dbo].[Orders]" >> db.log
+sqlcmd -S localhost -U SA -P winsql@17 -Q "USE [$dbName]; Select * from [$dbName].[dbo].[OrderItems]" >> db.log
+cat db.log
