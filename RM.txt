@@ -1,5 +1,5 @@
 
-Changes Team1
+Changes Memeber 1
 dbName=$USER"DB"
 
 sqlcmd -S localhost -U SA -P winsql@17 -d $dbName -Q "SET QUOTED_IDENTIFIER ON; INSERT INTO [dbo].[Products] (Id, Name, Price) VALUES (1, 'Tablet', 600.00);" >> db_insert.log
